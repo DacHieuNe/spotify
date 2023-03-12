@@ -1,0 +1,127 @@
+svg {
+  vertical-align: initial;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  padding: 0 16px;
+  background-color: #181818;
+  &__love {
+    span {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      color: #b3b3b3;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    &--active {
+      color: #1ed760 !important;
+    }
+  }
+  &__song {
+    margin: 0 14px;
+    h3 {
+      line-height: 20px;
+      margin: 0;
+      color: #fff;
+      font-size: 14px;
+    }
+    h4 {
+      line-height: 15px;
+      margin: 0;
+      color: #b3b3b3;
+      font-size: 11px;
+    }
+  }
+  &__image {
+    img {
+      width: 56px;
+      height: 56px;
+      object-fit: cover;
+    }
+  }
+  &-left {
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    min-width: 363px;
+  }
+  &-center {
+    flex: 0.4;
+  }
+  &-right {
+    flex: 0.3;
+    svg {
+      vertical-align: middle;
+    }
+  }
+  &__music {
+    width: fit-content;
+    margin: 0 auto;
+    &-icon {
+      margin: 0 10px;
+      border: none;
+      outline: none;
+      color: #b3b3b3;
+      background-color: transparent;
+      font-size: 22px;
+      &:nth-child(3) {
+        color: #fff;
+        font-size: 30px;
+      }
+      &--edit {
+        margin: 0 2px;
+        font-size: 20px;
+        &:nth-child(3) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  &__time {
+    width: fit-content;
+    margin: 0 auto;
+    &-text {
+      color: #a7a7a7;
+      font-size: 12px;
+    }
+  }
+}
+.modal__image {
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+}
+.style-range {
+  width: 70%;
+  height: 4px;
+  margin: 0 5px;
+  border-radius: 8px;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #a7a7a7;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  &--edit {
+    width: initial;
+  }
+}

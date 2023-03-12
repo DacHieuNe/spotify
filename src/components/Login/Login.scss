@@ -1,0 +1,31 @@
+@import "/src/assets/styles/mixin";
+@import "/src/assets/styles/color";
+
+.login {
+  position: fixed;
+  inset: 0;
+  background-color: #000;
+  &-logo {
+    position: absolute;
+    top: 16%;
+    text-align: center;
+    img {
+      width: 60%;
+    }
+  }
+  &-link {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    border-radius: 30px;
+
+    color: #fff;
+    background-color: $one-color;
+
+    font-weight: 500;
+    letter-spacing: 1px;
+    @include deploy_link;
+  }
+}

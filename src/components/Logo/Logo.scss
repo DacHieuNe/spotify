@@ -1,0 +1,11 @@
+.logo {
+  padding: 0 24px;
+  margin-bottom: 18px;
+  &__link {
+    img {
+      width: 131px;
+      height: 40px;
+      object-fit: contain;
+    }
+  }
+}
