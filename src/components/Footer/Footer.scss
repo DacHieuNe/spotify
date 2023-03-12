@@ -63,7 +63,7 @@ svg {
     }
   }
   &__music {
-    width: fit-content;
+    width: 70%;
     margin: 0 auto;
     &-icon {
       margin: 0 10px;
@@ -86,7 +86,7 @@ svg {
     }
   }
   &__time {
-    width: fit-content;
+    width: 80%;
     margin: 0 auto;
     &-text {
       color: #a7a7a7;
@@ -105,9 +105,9 @@ svg {
   }
 }
 .style-range {
-  width: 70%;
+  width: 68%;
   height: 4px;
-  margin: 0 5px;
+  margin: 0 10px;
   border-radius: 8px;
   vertical-align: middle;
   -webkit-appearance: none;
